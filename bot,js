@@ -1,0 +1,29 @@
+const Discord = require('discord.js');
+
+const client = new Discord.Client();
+
+ 
+
+client.on('ready', () => {
+
+    console.log('I am ready!');
+
+});
+
+ 
+
+client.on('message', message => {
+
+    if (message.content === 'ping') {
+
+       message.reply('pong');
+
+       }
+
+});
+
+ 
+
+// THIS  MUST  BE  THIS  WAY
+
+client.login(process.env.Nzk2MDgxNzcwOTMxMjkwMTIy.X_Su7A.3SC_hf8VP2v7qj1jll22PYv9yAI);//BOT_TOKEN is the Client Secret
